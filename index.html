@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">    
   </head>
 
   <body>
+    <div class="container">
     <header class="main-header">
       <nav class="navigation">
         <img class="main-logo" src="images/logo.svg" width="139" height="70" alt="Логотип Sedona.">  
-        <ul class="navigation-list">
+        <ul class="navigation-list reset-list">
           <li class="navigation-item">
             <a class="navigation-link" href="main.html">Главная</a>
           </li>  
@@ -21,7 +22,7 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-list navigation-user reset-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span></a>
@@ -37,14 +38,16 @@
     </header>
         
     <main class="main-container main-index">
-      <h1 class="visually-hidden"> Sedona</h1>
-      <img class="promo" src="images/welcome-promo.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona.">
+      <div class="promo-container">
+        <h1 class="visually-hidden"> Sedona</h1>
+        <img class="promo" src="images/welcome-promo.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona.">
+      </div>
       <p class="description"> Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</p>
-        
+              
       <section class="reasons">
         <h2 class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</h2>
         <div class="reasons-block">
-          <ul class="reasons-list">
+          <ul class="reasons-list reset-list">
             <li class="reasons-items reasons-change">
               <h3 class="reasons-title">Настоящий<br>городок</h3>
               <p class="reason-number">— №1 —</p>
@@ -131,10 +134,11 @@
         <a class="company-phone" href="tel:+78128121212">+7 812 812-12-12</a>
       </div>
       <div>
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+        <a class="visually-hidden" href="https://htmlacademy.ru/">.html academy</a>
           <img src="images/small-icons/html-academy.svg" width="115" height="33" alt=".html academy">
       </div>
       </div>
     </footer>
+    </div>
   </body>
 </html>
