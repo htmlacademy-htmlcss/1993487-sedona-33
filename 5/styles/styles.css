@@ -32,7 +32,6 @@
 
 html {
   height: 100%;
-  width: 1280px;
 }
 
 body {
@@ -44,13 +43,13 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #ffffff;    
+  background-color: #F2F2F2;    
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding-right: 17px;
+  background-color: #FFFFFF;
 }
 
 .visually-hidden {
@@ -136,7 +135,7 @@ body {
 .promo-container {
   color: #000000;
   background-color:#ffffff; 
-  background-image: url("/images/background/background-for-promo.jpg");
+  background-image: url("../images/background/background-for-promo.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -387,7 +386,8 @@ body {
 }
 
 .newsletter { 
-  background-image: url("/images/background/background-for-subscribe.jpg");
+  background-image: url("../images/background/background-for-subscribe.jpg");
+  background-color:#ffffff; 
   background-size: 100% auto;
   display: flex;
   width: 1200px;
@@ -796,10 +796,22 @@ body {
   margin: 0 auto;
   justify-content: space-around;
   align-items: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 .social-list {
+  display: flex;
+  flex-wrap: wrap;
   width: 107px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.social-item {
+  min-width: 20px;
+  min-height: 20px;
 }
 
 .company-phone {
