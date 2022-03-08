@@ -134,7 +134,7 @@ body {
 
 .promo-container {
   color: #000000;
-  background-color:#ffffff; 
+  background-color: #87CEEB; 
   background-image: url("../images/background/background-for-promo.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -387,7 +387,7 @@ body {
 
 .newsletter { 
   background-image: url("../images/background/background-for-subscribe.jpg");
-  background-color:#ffffff; 
+  background-color:#87CEEB; 
   background-size: 100% auto;
   display: flex;
   width: 1200px;
@@ -452,7 +452,7 @@ body {
 
 .form-container { 
   color: #000000;
-  background-color:#ffffff; 
+  background-color:#87CEEB; 
   background-image: url("../images/background/catalog-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -468,7 +468,7 @@ body {
   line-height: 78px;
   width: 1120px;
   margin: 0;
-  padding-top: 35px;
+  padding-top: 25px;
   padding-left: 71px;
   margin-bottom: 5px;
 }
@@ -517,13 +517,76 @@ body {
   color: #FFFFFF;
   font-size: 20px;
   line-height: 26px;
+  margin: 0;
+  padding: 0;
+  margin-right: 45px;
 }
 
-.offers-filter-group label{
+.offers-filter-price {
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 34px;
+  margin-left: 141px;
+}
+
+.container-field-price {
+  display: flex;
+  width: 287px;
+  margin-left: 141px;
+}
+
+.field-price input {
   font-weight: 400;
   color: #FFFFFF;
+  background-color: #F2F2F2;
   font-size: 18px;
   line-height: 23px;
+  width: 143.5px;
+  padding: 0;
+  border: 0;
+  padding-top: 14px;
+  padding-bottom: 11px;
+}
+
+.offers-filter-group {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.offers-filter-group .offers-filter-title {
+  margin-bottom: 30px;
+}
+
+.offer-filter-item {
+  margin-bottom: 13px;
+}
+
+.offer-filter-item:last-child {
+  margin-bottom: 0;
+}
+
+.control-input {
+  margin: 0;
+  margin-right: 19px;
+}
+
+.button-solution {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.offers-filter {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 .offers-filter-list {
@@ -539,6 +602,14 @@ body {
   background-color: #83B3D3;      
   text-transform: uppercase;
   text-align: center;  
+  display: block;
+  width: 160px;
+  height: 48px;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 .button-hidden {
@@ -546,7 +617,11 @@ body {
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;   
-  text-align: center;  
+  text-align: center;
+  display: block;
+  width: 160px;
+  padding: 0;
+  border: 0;
 }
 
 .result-of-search {
@@ -607,7 +682,7 @@ body {
   margin-bottom: 16px;
 }
 
-.batton-choice {
+.button-choice {
   display: flex;
   width: 300px;
   justify-content: space-between;

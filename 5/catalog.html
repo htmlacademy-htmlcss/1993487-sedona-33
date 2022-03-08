@@ -60,7 +60,7 @@
             <form class="options-filter" action="https://echo.htmlacademy.ru/" method="get">
             <div class="filter-container">         
               <fieldset class=offers-filter-group>
-                <legend class=offers-filter-title>Инфраструктура</legend>
+                <legend class=offers-filter-title>Инфраструктура:</legend>
                 <ul class="offers-filter-list reset-list">
                   <li class="offer-filter-item">
                     <label class="control"> 
@@ -77,7 +77,7 @@
                 </ul>
               </fieldset>
               <fieldset class=offers-filter-group>
-                <legend class=offers-filter-title>Тип жилья</legend>
+                <legend class=offers-filter-title>Тип жилья:</legend>
                 <ul class="offers-filter-list reset-list">
                   <li class="offer-filter-item">
                     <label class="control"> 
@@ -93,13 +93,17 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class=offers-filter-group>
-                <legend class=offers-filter-title>Стоимость,<span>₽:</span></legend>
-                <label><input type="text" value="0">от</label>
-                <label><input type="text" value="9000">до</label>
+              <fieldset class=offers-filter>
+                <legend class=offers-filter-price>Стоимость,<span>₽:</span></legend>
+                  <div class="container-field-price">
+                    <label class="field-price"><input type="text" value="0 от"></label>
+                    <label class="field-price"><input type="text" value="9000 до"></label>  
+                  </div>               
               </fieldset>
-              <button class="button-offer" type="submit">Применить</button>
-              <button class="button-hidden" type="submit">Сбросить</button>
+              <div class="button-solution">
+                <button class="button-offer" type="submit">Применить</button>
+                <button class="button-hidden" type="submit">Сбросить</button>
+              </div>
             </div>        
             </form>
           </section>
@@ -127,7 +131,7 @@
               </a>
               <h3 class="hotel-title">Amara Resort & Spa</h3>
               <p class="hotel-choice">Гостиница<span>От 4000 ₽</span></p>
-              <div class="batton-choice">
+              <div class="button-choice">
                 <a class="button button-detail" href="#">Подробнее</a>
                 <a class="button button-select" href="#">В Избранное</a>
               </div>
@@ -142,7 +146,7 @@
               </a>
               <h3 class="hotel-title">Desert Quail Inn</h3>
               <p class="hotel-choice">Гостиница<span>От 3000 ₽</span></p>
-              <div class="batton-choice">
+              <div class="button-choice">
                 <a class="button button-detail" href="#">Подробнее</a>
                 <a class="button button-select" href="#">В Избранное</a>
               </div>
@@ -157,7 +161,7 @@
               </a>
               <h3 class="hotel-title">Villas at Poco Diablo</h3>
               <p class="hotel-choice">Гостиница<span>От 2000 ₽</span></p>
-              <div class="batton-choice">
+              <div class="button-choice">
                 <a class="button button-detail" href="#">Подробнее</a>
                 <a class="button button-favorite" href="#">В Избранном</a>
               </div>
@@ -172,7 +176,7 @@
               </a>
               <h3 class="hotel-title">GreenTree Inn</h3>
               <p class="hotel-choice">Гостиница<span>От 3000 ₽</span></p>
-              <div class="batton-choice">
+              <div class="button-choice">
                 <a class="button button-detail" href="#">Подробнее</a>
                 <a class="button button-select" href="#">В Избранное</a>
               </div>
@@ -251,7 +255,7 @@
             <a class="company-phone" href="tel:+78128121212">+7 812 812-12-12</a>
           </div>
           <div>
-            <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+            <a class="visually-hidden" href="https://htmlacademy.ru/">.html academy</a>
               <img src="images/small-icons/html-academy.svg" width="115" height="33" alt=".html academy.">
           </div>
         </div>
