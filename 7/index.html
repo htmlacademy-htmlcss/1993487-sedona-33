@@ -14,7 +14,7 @@
           <img class="main-logo" src="images/logo.svg" width="139" height="70" alt="Логотип Sedona.">  
           <ul class="navigation-list reset-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="index.html">Главная</a>
+              <a class="navigation-link navigation-link-current-main" href="index.html">Главная</a>
             </li>  
             <li class="navigation-item">
               <a class="navigation-link" href="index.html">О Седоне</a>
@@ -165,7 +165,7 @@
               </li>
               <li class="social-item">
                 <a class="social-button" href="https://www.youtube.com/c/HTMLAcademyRUS">
-                  <svg class="social-icon" aria-hidden="true" focusable="false"width="20" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)">
+                  <svg class="social-icon" aria-hidden="true" focusable="false" width="20" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)">
                     <path d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h20v16H0z"/></clipPath></defs>
                   </svg> 
                   <span class="visually-hidden">YouTube</span></a>
@@ -185,6 +185,61 @@
           </div>
         </div>
       </footer>
+
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-auth">
+          <button class="modal-close-button" type="button">
+            <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"/>
+            </svg>
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="field-group-arrival">
+                <label class="date-of-arrival" for="arrival-form">Дата заезда:</label>
+                <input class="arrival-form-field common-field" type="text" id="arrival-form" name="arrival-form" value="27 апреля 2020">
+              </p>
+              <p class="description-arrival-form">Мы не можем отправить вас в прошлое.</p>
+              <p class="field-group-departure">
+                <label class="date-of-departure" for="departure-form">Дата выезда:</label>
+                <input class="departure-form-field common-field" type="text" id="departure-form" name="departure-form" value="1 сентября 2021">
+              </p>
+              <p class="description-departure-form">На эти даты есть свободные номера. Пока есть.</p>
+              <p class="field-group-adults">
+                <label class="adults" for="adults-form">Взрослые:</label>
+                <input class="adults-form-field common-field" type="number" id="adults-form" name="adults-form" value="2">
+                <svg class="more-adults field-icon" width="13" height="13" viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/>
+                </svg>
+                <svg class="less-adults field-icon" width="13" height="13" viewBox="0 0 13 1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0v1h13V0H0Z"/>
+                </svg>
+              </p>
+              <p class="field-group-children form-label-icon">
+                <label class="children" for="children-form">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button">
+                    <svg  class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12.5" cy="12.5" r="12.5"/>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>              
+                <input class="children-form-field common-field" type="number" id="children-form" name="children-form" value="1">
+                <svg class="more-children field-icon" width="13" height="13" viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/>
+                </svg>
+                <svg class="less-children field-icon" width="13" height="13" viewBox="0 0 13 1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0v1h13V0H0Z"/>
+                </svg>
+              </p>
+              <button class="auth-form-button" type="submit">Найти</button>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 </html>
