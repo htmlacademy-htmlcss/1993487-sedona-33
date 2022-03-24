@@ -69,7 +69,7 @@ body {
   left: 0;
   top: 0;
   width: 139px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .navigation-list {
@@ -512,7 +512,7 @@ body {
 }  
 
 .field::-webkit-input-placeholder {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
@@ -549,7 +549,7 @@ outline: 2px solid #FF5757;
 }
 
 .newsletter-button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -707,7 +707,7 @@ outline: 2px solid #FF5757;
 }
 
 .range-input {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   color: #FFFFFF;
   background-color: #F2F2F2;
@@ -921,7 +921,7 @@ outline: 2px solid #FF5757;
 }
 
 .button-offer {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
@@ -957,7 +957,7 @@ outline: 2px solid #FF5757;
 }
 
 .button-hidden {
-  font-family: "PT-Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -1351,7 +1351,7 @@ outline: 2px solid #FF5757;
 }
 
 .select {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
@@ -1577,7 +1577,7 @@ outline: 2px solid #FF5757;
 .modal-title {
   margin: 0;
   margin-bottom: 59px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 40px;
   font-weight: 700;
@@ -1589,7 +1589,7 @@ outline: 2px solid #FF5757;
 .field-group-departure,
 .field-group-adults,
 .field-group-children {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
@@ -1601,7 +1601,7 @@ outline: 2px solid #FF5757;
 .departure-form-field,
 .adults-form-field,
 .children-form-field {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
@@ -1628,7 +1628,7 @@ outline: 2px solid #FF5757;
 }
 
 .auth-form-button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 40px;
@@ -1948,7 +1948,7 @@ outline: 2px solid #FF5757;
 .tooltip-text {
   background-color: #333333;
   color: #ffffff;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
