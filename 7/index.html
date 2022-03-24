@@ -11,13 +11,13 @@
     <div class="container">
       <header class="main-header">
         <nav class="navigation">
-          <img class="main-logo" src="images/logo.svg" width="139" height="70" alt="Логотип Sedona.">  
+          <img class="main-logo" src="images/logo.svg" width="139" height="70" alt="Логотип Sedona."> 
           <ul class="navigation-list reset-list">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current-main" href="index.html">Главная</a>
+              <a class="navigation-link navigation-link-current-main" href="#">Главная</a>
             </li>  
             <li class="navigation-item">
-              <a class="navigation-link" href="index.html">О Седоне</a>
+              <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
@@ -104,24 +104,24 @@
             </ol>
             <ul class="reasons-list reset-list">           
               <li class="reasons-items-list reasons-wrapper ">
-                <img class="reasons-house-foto" src="/images/small-icons/house.svg" width="75" height="72" alt="Жилье">
+                <img class="reasons-house-foto" src="../images/small-icons/house.svg" width="75" height="72" alt="Жилье">
                 <section class="reasons-option-list">
                   <h3 class="reasons-title">Жильё</h3>
-                  <p class="reasons-description">Рекомендуем пожить <br> в настоящем мотеле, <br> всё как в кино!</p>
+                  <p class="reasons-description">Рекомендуем пожить<br> в настоящем мотеле,</br> всё как в кино!</p>
                 </section>
               </li>
               <li class="reasons-items-list reasons-wrapper">
-                <img class="reasons-food-foto" src="/images/small-icons/food.svg" width="74" height="70" alt="Еда">
+                <img class="reasons-food-foto" src="../images/small-icons/food.svg" width="74" height="70" alt="Еда">
                 <section class="reasons-option-list">
                   <h3 class="reasons-title">Еда</h3>
-                  <p class="reasons-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
+                  <p class="reasons-description">Всегда заказывайте</br> топовый фирменный бургер,</br> вы не разочаруетесь!</p>
                 </section>
               </li>
               <li class="reasons-items-list reasons-wrapper">
-                <img class="reasons-souvenirs-foto" src="/images/small-icons/souvenirs.svg" width="64" height="76" alt="Сувениры">
+                <img class="reasons-souvenirs-foto" src="../images/small-icons/souvenirs.svg" width="64" height="76" alt="Сувениры">
                 <section class="reasons-option-list">
                   <h3 class="reasons-title">Сувениры</h3>
-                  <p class="reasons-description">Не только китайского,<br> но и настоящего местного<br> производства!</p>
+                  <p class="reasons-description">Не только китайского,</br> но и настоящего местного</br> производства!</p>
                 </section>
               </li>                                             
             </ul>
@@ -130,7 +130,7 @@
         <section class=offer>
           <h2 class="offer-title">Заинтересовались?</h2>
           <p class="offer-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="button-search" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+          <a class="button-search" href="catalog.html">Поиск гостиницы в Седоне</a>
         </section>
         <section class="newsletter">
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
@@ -173,7 +173,7 @@
             </ul>
           </section>
           <div>
-            <a class="company-phone" href="tel:+78128121212">+7 812 812-12-12</a>
+            <a class="company-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </div>
           <div>
             <a class="information-link" href="https://htmlacademy.ru">
@@ -210,30 +210,42 @@
               <p class="field-group-adults">
                 <label class="adults" for="adults-form">Взрослые:</label>
                 <input class="adults-form-field common-field" type="number" id="adults-form" name="adults-form" value="2">
-                <svg class="more-adults field-icon" width="13" height="13" viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/>
-                </svg>
-                <svg class="less-adults field-icon" width="13" height="13" viewBox="0 0 13 1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 0v1h13V0H0Z"/>
-                </svg>
+                <button class="button-more-adults common-button" type="button">
+                  <svg class="more-adults field-icon" width="13" height="13" viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/>
+                  </svg>
+                  <span class="visually-hidden">Увеличить количество взрослых</span>
+                </button>
+                <button class="button-less-adults common-button" type="button">
+                  <svg class="less-adults field-icon" width="13" height="13" viewBox="0 0 13 1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0v1h13V0H0Z"/>
+                  </svg>
+                  <span class="visually-hidden">Уменьшить количество взрослых</span>
+                </button>
               </p>
               <p class="field-group-children form-label-icon">
                 <label class="children" for="children-form">Дети:</label>
                 <span class="tooltip">
-                  <button class="tooltip-toggle" type="button">
+                  <button class="tooltip-toggle" type="button" aria-label="tooltip">
                     <svg  class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="12.5" cy="12.5" r="12.5"/>
                     </svg>
-                  </button>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </button>                                                     
                 </span>              
                 <input class="children-form-field common-field" type="number" id="children-form" name="children-form" value="1">
-                <svg class="more-children field-icon" width="13" height="13" viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/>
-                </svg>
-                <svg class="less-children field-icon" width="13" height="13" viewBox="0 0 13 1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 0v1h13V0H0Z"/>
-                </svg>
+                <button class="button-more-children common-button" type="button">
+                  <svg class="more-children field-icon" width="13" height="13" viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/>
+                  </svg>
+                  <span class="visually-hidden">Увеличить количество детей</span>
+                </button>
+                <button class="button-less-children common-button" type="button">
+                  <svg class="less-children field-icon" width="13" height="13" viewBox="0 0 13 1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0v1h13V0H0Z"/>
+                  </svg>
+                  <span class="visually-hidden">Уменьшить количество детей</span>
+                </button>
               </p>
               <button class="auth-form-button" type="submit">Найти</button>
             </form>
