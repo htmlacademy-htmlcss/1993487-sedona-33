@@ -101,9 +101,18 @@ body {
   color: #756257;
 }
 
-.navigation-link:active {
+.navigation-first:active {
   color: #756257;
   opacity: 30%;
+}
+
+.navigation-icon:active {
+  fill: rgb(117, 98, 87,0.3);
+}
+
+.navigation-icon:focus {
+ outline: 3px solid #83B3D3;
+ border-radius: 4px;
 }
 
 .navigation-user .navigation-link {
@@ -139,6 +148,7 @@ body {
   right: 0;
   left: 0;
   margin: auto;
+  display: block;
 }
 
 .navigation-button {
@@ -343,6 +353,7 @@ body {
 }
 
 .reasons-list {
+  position: relative;
   display: flex;
   margin: 0;
   padding: 0;
@@ -375,10 +386,29 @@ body {
   padding: 0 75px 79px;
 }
 
+.reason-house {
+  background-image: url("../images/small-icons/house.svg");
+  background-repeat: no-repeat;
+  background-position: top 89px center;
+}
+
+.reason-food {
+  background-image: url("../images/small-icons/food.svg");
+  background-repeat: no-repeat;
+  background-position: top 91px center;
+}
+
+.reason-souvenirs {
+  background-image: url("../images/small-icons/souvenirs.svg");
+  background-repeat: no-repeat;
+  background-position: top 85px center;
+}
+
 .reasons-option-list {
   display: flex;
   flex-direction: column;
   width: 250px;
+  padding-top: 184px;
 }
 
 .reasons-option-list h3 {
@@ -625,25 +655,29 @@ outline: 2px solid #FF5757;
 }
 
 .breadcrambs-link {
+  position: relative;
   font-weight: 400;
   color: #ffffff;
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
 }
+
 .breadcrambs-item .breadcrambs-link {
   padding-left: 8px;
   padding-right: 9px;
 }
 
-.breadcrambs-item .bredcrambs-icon-arrow {
-  padding-left: 2px; 
-  padding-right: 2px ;
-  padding-top: 8px;
+.breadcrambs-part::before {
+  content: url("../images/small-icons/arrow-right.svg");
+  position: absolute;
+  left: 31px;
+  bottom: 1px;
+  opacity: 30%;
 }
 
-.bredcrambs-icon-arrow {
-  opacity: 30%;
+.breadcrambs-section {
+  margin-left: 9px;
 }
 
 .breadcrambs-link:hover {
