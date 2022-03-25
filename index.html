@@ -14,13 +14,13 @@
           <img class="main-logo" src="images/logo.svg" width="139" height="70" alt="Логотип Sedona."> 
           <ul class="navigation-list reset-list">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current-main" href="#">Главная</a>
+              <a class="navigation-link navigation-first navigation-link-current-main" href="#">Главная</a>
             </li>  
             <li class="navigation-item">
-              <a class="navigation-link" href="#">О Седоне</a>
+              <a class="navigation-link navigation-first" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link navigation-first" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-list navigation-user reset-list">
@@ -103,23 +103,20 @@
               </li>
             </ol>
             <ul class="reasons-list reset-list">           
-              <li class="reasons-items-list reasons-wrapper ">
-                <img class="reasons-house-foto" src="../images/small-icons/house.svg" width="75" height="72" alt="Жилье">
-                <section class="reasons-option-list">
+              <li class="reasons-items-list reason-house reasons-wrapper ">
+                  <section class="reasons-option-list">
                   <h3 class="reasons-title">Жильё</h3>
                   <p class="reasons-description">Рекомендуем пожить в настоящем мотеле,<br> всё как в кино!</p>
                 </section>
               </li>
-              <li class="reasons-items-list reasons-wrapper">
-                <img class="reasons-food-foto" src="../images/small-icons/food.svg" width="74" height="70" alt="Еда">
-                <section class="reasons-option-list">
+              <li class="reasons-items-list reason-food reasons-wrapper">
+                  <section class="reasons-option-list">
                   <h3 class="reasons-title">Еда</h3>
                   <p class="reasons-description">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!</p>
                 </section>
               </li>
-              <li class="reasons-items-list reasons-wrapper">
-                <img class="reasons-souvenirs-foto" src="../images/small-icons/souvenirs.svg" width="64" height="76" alt="Сувениры">
-                <section class="reasons-option-list">
+              <li class="reasons-items-list reason-souvenirs reasons-wrapper">
+                  <section class="reasons-option-list">
                   <h3 class="reasons-title">Сувениры</h3>
                   <p class="reasons-description">Не только китайского, <br> но и настоящего местного производства!</p>
                 </section>
@@ -136,7 +133,8 @@
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
           <p class="newsletter-description">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+            <label class="visually-hidden" for="newsletter-email">Email</label>
+            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
           <button class="button newsletter-button" type="submit">
             <span class="button">Подписаться</span>
           </button>
