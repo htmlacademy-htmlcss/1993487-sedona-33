@@ -110,14 +110,14 @@ body {
   fill: rgb(117, 98, 87,0.3);
 }
 
-.navigation-icon:focus {
- outline: 3px solid #83B3D3;
- border-radius: 4px;
+.navigation-second {
+  padding: 33px 21px;
 }
 
-.navigation-user .navigation-link {
-  padding: 0;
-  min-width: 42px;
+.navigation-second:focus {
+  outline: 3px solid #83B3D3;
+  outline-offset: -2px;
+  border-radius: 4px;
 }
 
 .navigation-link-current-main::before {
@@ -148,7 +148,6 @@ body {
   right: 0;
   left: 0;
   margin: auto;
-  display: block;
 }
 
 .navigation-button {
